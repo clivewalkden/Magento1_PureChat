@@ -1,0 +1,26 @@
+<?php
+/**
+ * SOZO Design
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Open Software License (OSL 3.0)
+ * that is bundled with this package in the file LICENSE.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/osl-3.0.php
+ *
+ * @category    SOZO Design
+ * @package     Sozo_Purechat
+ * @copyright   Copyright (c) 2016 SOZO Design (http://www.sozodesign.com)
+ * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ *
+ */
+
+if (Mage::helper('sozo_purechat')->isEnabled()) :
+    ?>
+<!-- BEGIN PURECHAT CODE -->
+<script type='text/javascript' data-cfasync='false'>window.purechatApi = { l: [], t: [], on: function () { this.l.push(arguments); } }; (function () { var done = false; var script = document.createElement('script'); script.async = true; script.type = 'text/javascript'; script.src = 'https://app.purechat.com/VisitorWidget/WidgetScript'; document.getElementsByTagName('HEAD').item(0).appendChild(script); script.onreadystatechange = script.onload = function (e) { if (!done && (!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete')) { var w = new PCWidget({c: '<?php echo $this->htmlEscape(Mage::helper("sozo_purechat")->getWidgetId())?>', f: true }); done = true; } }; })();</script>
+<!-- END PURECHAT CODE -->
+    <?php
+endif;
+?>

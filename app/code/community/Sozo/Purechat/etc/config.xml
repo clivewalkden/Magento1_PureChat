@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<!--
+  ~ SOZO Design
+  ~
+  ~ NOTICE OF LICENSE
+  ~
+  ~ This source file is subject to the Open Software License (OSL 3.0)
+  ~ that is bundled with this package in the file LICENSE.
+  ~ It is also available through the world-wide-web at this URL:
+  ~ http://opensource.org/licenses/osl-3.0.php
+  ~
+  ~ @category    SOZO Design
+  ~ @package     Sozo_Purechat
+  ~ @copyright   Copyright (c) 2016 SOZO Design (http://www.sozodesign.com)
+  ~ @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+  ~
+  -->
+
+<config>
+    <modules>
+        <Sozo_Purechat>
+            <version>1.0.0</version>
+        </Sozo_Purechat>
+    </modules>
+    <global>
+        <helpers>
+            <sozo_purechat>
+                <class>Sozo_Purechat_Helper</class>
+            </sozo_purechat>
+        </helpers>
+        <blocks>
+            <sozo_purechat>
+                <class>Sozo_Purechat_Block</class>
+            </sozo_purechat>
+        </blocks>
+    </global>
+    <frontend>
+        <layout>
+            <updates>
+                <sozo_purechat>
+                    <file>sozo_purechat.xml</file>
+                </sozo_purechat>
+            </updates>
+        </layout>
+        <translate>
+            <modules>
+                <Sozo_Purechat>
+                    <files>
+                        <default>Sozo_Purechat.csv</default>
+                    </files>
+                </Sozo_Purechat>
+            </modules>
+        </translate>
+    </frontend>
+    <default>
+        <sozo_purechat>
+            <general>
+                <enabled>0</enabled>
+            </general>
+            <chatsetup>
+                <widget_id></widget_id>
+            </chatsetup>
+        </sozo_purechat>
+    </default>
+</config>

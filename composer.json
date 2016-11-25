@@ -1,0 +1,10 @@
+{
+  "name": "sozodesign/magento-purechat",
+  "description": "A plugin for Magento that outputs the purechat javascript code into the website",
+  "type": "magento-module",
+  "homepage": "https://bitbucket.org/sozodesign/magento-purechat",
+  "license": "OSL-3",
+  "suggest": {
+    "magento-hackathon/magento-composer-installer": "Allows the package to be installed into Magento"
+  }
+}
