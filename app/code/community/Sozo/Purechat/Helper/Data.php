@@ -19,7 +19,7 @@
 class Sozo_Purechat_Helper_Data extends Mage_Core_Helper_Abstract
 {
     const XML_PURECHAT_ENABLED = 'sozo_purechat/general/enabled';
-    const XML_PURECHAT_WIDGET_ID = 'sozo_purechat/chatsetup/widget_id';
+    const XML_PURECHAT_WIDGET_ID = 'sozo_purechat/general/widget_id';
 
     public function isEnabled($store = null)
     {
@@ -29,5 +29,15 @@ class Sozo_Purechat_Helper_Data extends Mage_Core_Helper_Abstract
     public function getWidgetId($store = null)
     {
         return Mage::getStoreConfig(self::XML_PURECHAT_WIDGET_ID, $store);
+    }
+
+    /**
+     * Returns extension version.
+     *
+     * @return string
+     */
+    public function getExtensionVersion()
+    {
+        return (string) Mage::getConfig()->getNode()->modules->Sozo_Purechat->version;
     }
 }
