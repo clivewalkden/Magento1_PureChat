@@ -17,3 +17,18 @@ It shows which page a visitor is on, where they were referred from, and whether 
 
 ## Start
 Signup [here](https://www.purechat.com?aid=7509056c-84dd-41e2-b2a5-f37dd4b76328&cid=7bf60b8d-1976-4d7f-9301-c77731ac0a3b) and create your free account.
+
+## Installation
+
+### Composer
+```
+composer require sozodesign/magento-purechat
+```
+
+### Modman
+```
+modman clone https://github.com/clivewalkden/Magento1_PureChat
+```
+
+### Magento Connect
+*coming soon*
