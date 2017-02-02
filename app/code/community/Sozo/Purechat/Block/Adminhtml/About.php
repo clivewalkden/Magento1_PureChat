@@ -30,11 +30,9 @@ class Sozo_Purechat_Block_Adminhtml_About
     {
         $element  = null;
         $version  = Mage::helper('sozo_purechat')->getExtensionVersion();
-        $logopath = 'https://sozodesign.co.uk/images/email-signature.png';
+        $logopath = 'https://sozodesign.co.uk/images/magento/sozo_magento_plugin_about.png';
         $html = <<<HTML
-<div style="background:url('$logopath') no-repeat scroll 15px 15px #e7efef; 
-border:1px solid #ccc; min-height:100px; margin:5px 0; 
-padding:1em 1em 1em 10em;">
+<div style="background: url('$logopath') no-repeat scroll 15px 15px #e7efef; border: 1px solid #ccc; min-height: 97px; margin: 5px 0; padding: 15px 15px 15px 180px;">
     <p>
         <strong>SOZO PureChat Plugin v$version</strong><br />
         Add the Purechat widget to your pages.
@@ -42,13 +40,13 @@ padding:1em 1em 1em 10em;">
         <a href="http://bit.ly/2fPvANP" target="_blank" title="Go to PureChat Website">Sign Up here to get an account</a>
     </p>
     <p>
-        Control the look of your Chat window through your <a href="https://app.purechat.com/user/dashboard" target="_blank">PureChat dashboard</a>. 
+        Control the look of your Chat window through your <a href="https://app.purechat.com/user/dashboard" target="_blank">PureChat dashboard</a>.
     </p>
     <p>
-        Website: 
+        Website:
         <a href="https://sozodesign.co.uk" target="_blank">sozodesign.co.uk</a><br />
-        Like, share and follow us on 
-        <a href="https://twitter.com/sozodesign" target="_blank">Twitter</a>, 
+        Like, share and follow us on
+        <a href="https://twitter.com/sozodesign" target="_blank">Twitter</a>,
         <a href="https://plus.google.com/103411336885753828600/" target="_blank">Google+</a>,
         <a href="https://www.youtube.com/user/SozoDesignLtd" target="_blank">YouTube</a>,
         <a href="https://vimeo.com/sozodesign" target="_blank">Vimeo</a>, and
